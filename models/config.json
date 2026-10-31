@@ -1,0 +1,45 @@
+{
+  "architecture": "ResNet18",
+  "pretraining": "ImageNet-1K",
+  "selected_experiment": "low_learning_rate",
+  "selected_fine_tuning_epoch": 4,
+  "selection_metric": "validation_macro_f1",
+  "validation_macro_f1": 0.6469192179372981,
+  "class_names": [
+    "Anger",
+    "Disgust",
+    "Fear",
+    "Happy",
+    "Neutral",
+    "Sad"
+  ],
+  "num_frames": 8,
+  "frame_sampling": "uniform_including_endpoints",
+  "image_size": [
+    224,
+    224
+  ],
+  "color_space": "RGB",
+  "normalization_mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "normalization_std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "aggregation": "mean_frame_probabilities",
+  "face_detector": "OpenCV Haar frontal face",
+  "face_scale_factor": 1.1,
+  "face_min_neighbors": 5,
+  "face_min_size": [
+    40,
+    40
+  ],
+  "crop_side_multiplier": 1.3,
+  "missing_face_policy": "reuse_nearest_detected_box_within_video",
+  "no_detected_faces_policy": "flag_for_review",
+  "seed": 42
+}
