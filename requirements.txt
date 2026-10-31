@@ -1,0 +1,14 @@
+# analyses (notebooks 05-10)
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+# model training (notebooks 00-04, Google Colab)
+torch
+torchvision
+librosa
+soundfile
+opencv-python-headless==4.11.0.86
+Pillow
+tqdm
